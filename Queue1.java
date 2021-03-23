@@ -50,11 +50,17 @@ public class Queue1 {
 	}
 
 	public int head() {
-		return queue[head];
+		 if(!isEmpty()) {
+            return queue[head];
+        }
+        return -1;
 	}
 
 	public int tail() {
-		return queue[tail];
+		if(!isEmpty()) {
+            return queue[tail];
+        }
+        return -1;
 	}
 
 	public void show() {
